@@ -16,7 +16,7 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	paper = new Paper(50,690,50);
+	paper = new Paper(50,600,50);
 
 	dustbinSprite=createSprite(550, 570);
 	dustbinSprite.addImage(dustbinImg);
@@ -36,9 +36,9 @@ function draw() {
   rectMode(CENTER);
   background("grey");
 
-  paper.display();
-
   ground.display();
+  
+  paper.display();
 
   drawSprites();
  
